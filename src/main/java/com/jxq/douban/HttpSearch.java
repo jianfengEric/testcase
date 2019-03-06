@@ -23,11 +23,8 @@ public class HttpSearch extends HttpBase {
     }
 
     public Response<MovieResponseVO> searchTags(String type, String source) throws IOException {
-        if(1/0>1){
-            Call<MovieResponseVO> call = iSearch.searchTags(type, source);
-            return call.execute();
-        }
-        return null;
+        Call<MovieResponseVO> call = iSearch.searchTags(type, source);
+        return call.execute();
     }
 
 }
